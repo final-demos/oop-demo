@@ -3,9 +3,13 @@ package com.oop.demo;
 public class Book {
 	private String author;//required, immutable
 	private String title; //required, immutable
-	private float price;//not mandatory, mutable
+	private float price;// not mandatory, mutable
 	private STATUS status;// required, mutable
 
+	public String getTitle() {
+		return title;
+	}
+	
 	public STATUS getStatus() {
 		return status;
 	}

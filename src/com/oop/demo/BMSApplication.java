@@ -2,8 +2,19 @@ package com.oop.demo;
 
 public class BMSApplication {
 	public static void main(String[] args) {
+//		demo1();
+		InheritanceDemo();
+
+	}
+
+	private static void InheritanceDemo() {
+		VirtualBook virtualBook = new VirtualBook("John", "A Suitable Boy");
+		System.out.println(virtualBook.getTitle());
+	}
+
+	private static void demo1() {
 		Book book;// reference or variable
-		Book book1 = new Book("Learn Java", "Ram");// reference + object, Logical mistakes
+		Book book1 = new Book("Ram", "Learn Java");// reference + object
 		book1.setPrice(100.99f);
 		book1.setStatus(STATUS.AVAILABLE);
 		System.out.println(book1.getAuthor());
@@ -15,6 +26,5 @@ public class BMSApplication {
 		System.out.println(book2.hashCode());
 		System.out.println(book1 == book2); // reference equality check
 //		book1.author = "Ram"; //bad code
-
 	}
 }
