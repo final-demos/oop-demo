@@ -3,7 +3,7 @@ package com.oop.demo;
 public class BMSApplication {
 	public static void main(String[] args) {
 		Book book;// reference or variable
-		Book book1 = new Book("Ram", "Learn Java");// reference + object
+		Book book1 = new Book("Learn Java", "Ram");// reference + object, Logical mistakes
 		book1.setPrice(100.99f);
 		book1.setStatus(STATUS.AVAILABLE);
 		System.out.println(book1.getAuthor());
